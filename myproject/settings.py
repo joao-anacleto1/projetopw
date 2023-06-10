@@ -128,7 +128,7 @@ MEDIA_ROOT = '/home/jaPWproject/portfolio/media'
 MEDIA_URL = '/media/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
-STATIC_URL = 'portfolio/static/'
+STATIC_URL = '/static/'
 
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'portfolio/static'),
