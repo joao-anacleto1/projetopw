@@ -1,0 +1,37 @@
+{% extends  "portfolio/layout.html" %}
+{% load static %}
+{% block title %}Home{% endblock %}
+{% block main %}
+  <section class="home">
+    <div class="home-content">
+      <h3>Hello, I'm</h3>
+      <h1>João Anacleto</h1>
+      <h3>And I'm a <span>Computer Engineer</span></h3>
+      <p>
+        "Be inspired, create, and leave your mark on the world."
+      </p>
+      <div class="social-media">
+        <a href="mailto:joaopranacleto@gmail.com"><i class="fa-solid fa-envelope" style="color: #ffffff;"></i></a>
+        <a href="https://www.linkedin.com/in/jo%C3%A3o-anacleto-a4a865232/"><i class="fa-brands fa-linkedin" style="color: #ffffff;"></i></a>
+        <a href="https://twitter.com/JoaoAnacleto17"><i class="fa-brands fa-twitter" style="color: #ffffff;"></i></a>
+        <a href="https://www.instagram.com/joao_anacleto__/?hl=pt"><i class="fa-brands fa-instagram" style="color: #ffffff;"></i></a>
+      </div>
+      <a href="#" class="btn">Download CV</a>
+    </div>
+
+    <div class="home-img">
+      <img src="{% static 'portfolio/images/eu.png' %}" alt="">
+    </div>
+  </section>
+
+  <div class="img-telele">
+    <img src="{% static 'portfolio/images/eu.png' %}"  alt="">
+  </div>
+
+
+{% endblock main %}
+
+
+
+
+

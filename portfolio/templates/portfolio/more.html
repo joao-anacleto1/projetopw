@@ -1,0 +1,80 @@
+{% extends  "portfolio/layout.html" %}
+{% load static %}
+{% block title %}More{% endblock %}
+{% block main %}
+    <div class="containerA">
+      <h1>Bem-vindo!</h1>
+      <p class="message">Para continuar, escreva o seu nome:</p>
+      <input type="text" id="nome" class="input" />
+      <button id="botao" class="button">Enviar</button>
+      <div id="greeting" class="greeting"></div>
+      <div id="alerta" class="alerta"></div>
+      <div id="alerta2" class="alerta2"></div>
+    </div>
+
+    <div class="calculator-grid">
+      <div class="output">
+        <div data-previous-operand class="previous-operand"></div>
+        <div data-current-operand class="current-operand"></div>
+      </div>
+      <button data-all-clear class="span-two">AC</button>
+      <button data-delete>DEL</button>
+      <button data-operation>÷</button>
+      <button data-number>1</button>
+      <button data-number>2</button>
+      <button data-number>3</button>
+      <button data-operation>*</button>
+      <button data-number>4</button>
+      <button data-number>5</button>
+      <button data-number>6</button>
+      <button data-operation>+</button>
+      <button data-number>7</button>
+      <button data-number>8</button>
+      <button data-number>9</button>
+      <button data-operation>-</button>
+      <button data-number>.</button>
+      <button data-number>0</button>
+      <button data-equals class="span-two">=</button>
+    </div>
+
+    <div class="imagemIns">
+        <img
+          id="inspirational-image"
+          src="{% static 'portfolio/images/paisagem.png' %}"
+          alt="Inspiration"
+        />
+        <p></p>
+        <button id="inspirational-button">Add inspiring phrase</button>
+        <center><br>
+      <div class="exemplo"
+        id="exemplo"
+        onmouseover="mostrarMensagem()"
+        onmouseout="esconderMensagem()"
+      >
+        Passe o seu cursor aqui 🖱️
+      </div>
+    </center>
+    </div>
+
+
+    <div class="sections-3">
+      <center>
+      <div class="hat">
+        <div class="hat-top"></div>
+        <div class="hat-bottom"></div>
+      </div>
+    </center>
+
+    </div>
+
+   </div>
+
+
+
+
+{% endblock main %}
+
+
+
+
+

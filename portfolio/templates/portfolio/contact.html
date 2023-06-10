@@ -1,0 +1,87 @@
+{% extends  "portfolio/layout.html" %}
+{% load static %}
+{% block title %}Contact{% endblock %}
+{% block main %}
+
+
+    <div class="contact">
+      <div class="form">
+        <div class="contact-info">
+          <h3 class="title">Let's get in touch</h3>
+          <p class="text">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry.
+          </p>
+          <div class="info">
+            <div class="information">
+              <p>
+                <i class="fas fa-paper-plane" class="icon"></i>
+                joaopranacleto@gmail.com
+              </p>
+              <br />
+              <p><i class="fa-solid fa-tree-city"></i> Montijo</p>
+              <br />
+              <p>
+                <i class="fa-sharp fa-regular fa-calendar"></i>
+                <span id="data-hoje"></span>
+              </p>
+
+              <div class="social-media">
+                <div class="icones">
+                  <a
+                    href="https://www.linkedin.com/in/jo%C3%A3o-anacleto-a4a865232/"
+                    ><i class="fa-brands fa-linkedin" class="icon"></i
+                  ></a>
+                  <a href="https://github.com/joao-anacleto1"
+                    ><i class="fa-brands fa-github" class="icon"></i
+                  ></a>
+                  <a href="https://www.instagram.com/joao_anacleto__/?hl=pt"
+                    ><i class="fa-brands fa-instagram" class="icon"></i
+                  ></a>
+                  <a
+                    href="https://www.facebook.com/profile.php?id=100011122719437"
+                    ><i class="fa-brands fa-facebook" class="icon"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form">
+          <span class="circle one"></span>
+          <span class="circle two"></span>
+
+          <form action="contact.html">
+            <h3 class="title">Contact me</h3>
+            <div class="input-container">
+              <input type="text" name="id" class="input" required />
+              <label for="">Name</label>
+              <span>Name</span>
+            </div>
+            <div class="input-container">
+              <input type="email" name="id" class="input" />
+              <label for="">Email</label>
+              <span>Email</span>
+            </div>
+            <div class="input-container textarea">
+              <textarea name="message" class="input"></textarea>
+              <label for="">Message</label>
+              <span>Message</span>
+            </div>
+            <input type="submit" value="Submit" class="botaoSubmit" />
+          </form>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+{% endblock main %}
+
+
+
+
+

@@ -1,0 +1,68 @@
+{% extends  "portfolio/layout.html" %}
+{% load static %}
+{% block title %}About me{% endblock %}
+{% block main %}
+    <div class="about">
+      <div class="container">
+        <div class="row">
+          <div class="aboutcol1">
+            <img src="{% static 'portfolio/images/eu-qua.png' %}" alt="" />
+          </div>
+          <div class="aboutcol2">
+            <h1 class="subtitle">About Me</h1>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book. It has
+              survived not only five centuries, but also the leap into
+              electronic typesetting, remaining essentially unchanged. It was
+              popularised in the 1960s with the release of Letraset sheets
+              containing Lorem Ipsum passages, and more recently with desktop
+              publishing software like Aldus PageMaker including versions of
+              Lorem Ipsum.
+            </p>
+
+            <div class="tabtitles">
+              <p class="tablinks activelink" onclick="openTab('course')">
+                Course
+              </p>
+              <p class="tablinks" onclick="openTab('education')">Education</p>
+              <p class="tablinks" onclick="openTab('skills')">Skills</p>
+              <p class="tablinks" onclick="openTab('hobbies')">Hobbies</p>
+            </div>
+            <div class="tabcontents activeTab" id="course">
+              <ul>
+                <li><span>Titulo...</span><br />TEXTO CURSO</li>
+                <li><span>Titulo...</span><br />TEXTO CURSO</li>
+                <li><span>Titulo...</span><br />TEXTO CURSO</li>
+              </ul>
+            </div>
+            <div class="tabcontents" id="education">
+              <ul>
+                <li><span>Titulo...</span><br />TEXTO EDUCATION</li>
+                <li><span>Titulo...</span><br />TEXTO EDUCATION</li>
+                <li><span>Titulo...</span><br />TEXTO EDUCATION</li>
+              </ul>
+            </div>
+            <div class="tabcontents" id="skills">
+              <ul>
+                <li><span>Titulo...</span><br />TEXTO SKILLS</li>
+                <li><span>Titulo...</span><br />TEXTO SKILLS</li>
+                <li><span>Titulo...</span><br />TEXTO SKILLS</li>
+              </ul>
+            </div>
+            <div class="tabcontents" id="hobbies">
+              <ul>
+                <li><span>UI?UX</span><br />TEXTO HOBBIES</li>
+                <li><span>UI?UX</span><br />TEXTO HOBBIES</li>
+                <li><span>UI?UX</span><br />TEXTO HOBBIES</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+{% endblock main %}
