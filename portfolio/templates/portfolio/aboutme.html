@@ -1,68 +1,148 @@
-{% extends  "portfolio/layout.html" %}
+{% extends "portfolio/layout.html" %}
 {% load static %}
 {% block title %}About me{% endblock %}
 {% block main %}
-    <div class="about">
-      <div class="container">
-        <div class="row">
-          <div class="aboutcol1">
-            <img src="{% static 'portfolio/images/eu-qua.png' %}" alt="" />
-          </div>
-          <div class="aboutcol2">
-            <h1 class="subtitle">About Me</h1>
-            <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book. It has
-              survived not only five centuries, but also the leap into
-              electronic typesetting, remaining essentially unchanged. It was
-              popularised in the 1960s with the release of Letraset sheets
-              containing Lorem Ipsum passages, and more recently with desktop
-              publishing software like Aldus PageMaker including versions of
-              Lorem Ipsum.
-            </p>
+<div class="about">
+  <div class="container">
+    <div class="row">
+      <div class="aboutcol1">
+        <img src="{% static 'portfolio/images/eu-qua.png' %}" alt="" />
+      </div>
+      <div class="aboutcol2" style="text-align: justify">
+        <h1 class="subtitle">About Me</h1>
 
-            <div class="tabtitles">
-              <p class="tablinks activelink" onclick="openTab('course')">
-                Course
+        <p style="margin-bottom: 10px;color: #696969">
+          Hello! My name is João Pedro Rosa Anacleto, and I am a university student passionate about the field of
+          Computer Engineering.
+        </p>
+
+        <p style="margin-bottom: 10px;color: #696969">
+          At 20 years old, I was born in Barreiro and currently live in Montijo.
+        </p>
+
+        <p style="margin-bottom: 10px;color: #696969">
+          Throughout my academic journey, I have had the opportunity to gain relevant professional experience, which has
+          allowed me to develop technical skills in various programming languages such as Java, Python, C, HTML, CSS,
+          and JavaScript.
+        </p>
+        <p style="margin-bottom: 10px;color: #696969">
+          Additionally, I have knowledge of frameworks like Django and database systems like MySQL.
+        </p>
+
+        <p style="margin-bottom: 10px;color: #696969"> I
+          have always sought to expand my horizons through diverse interests and hobbies, including playing football,
+          going to the gym, reading magazines related to my field, watching series, playing video games, among others.
+        </p>
+
+        <p style="margin-bottom: 10px;color: #696969">
+          Regarding languages, I am fluent in Portuguese (native), with intermediate knowledge of Spanish and English,
+          which gives me an advantage in global communication.
+        </p>
+
+        <p style="margin-bottom: 10px;color: #696969">
+          Throughout my university path, I have participated in
+          projects aimed at expanding our knowledge in specific subjects, which has helped shape my vision and career
+          goals.
+        </p>
+
+        <p style="margin-bottom: 10px;color: #696969">
+          I highly value integrity and collaboration, as I believe they are essential pillars for success in any
+          endeavor.
+        </p>
+
+        <p style="margin-bottom: 10px;color: #696969">Furthermore, I constantly strive for professional excellence, seeking to improve my skills and
+          knowledge in the field of Computer Engineering.</p>
+
+        <p style="margin-bottom: 10px;color: #696969">I am thrilled to share my work and passion through this
+          digital portfolio.</p>
+
+        <p style="margin-bottom: 10px;color: #696969;">Thank you for visiting the website, and I hope you enjoy it!</p>
+
+        <div class="tabtitles">
+          <p class="tablinks activelink" onclick="openTab('course')">
+            Course
+          </p>
+          <p class="tablinks" onclick="openTab('education')">Education</p>
+          <p class="tablinks" onclick="openTab('skills')">Skills</p>
+          <p class="tablinks" onclick="openTab('hobbies')">Hobbies</p>
+        </div>
+        <div class="tabcontents activeTab" id="course">
+          <ul>
+            <li><span>Primeiro Ano</span><br />
+              <span class="corSpan">Primeiro Semestre</span>
+              <p class="textoCurso">Fundamentos de Fisíca | 6 ECTS | 2021-2022 | ★★ | Prof.Cristiane Ferreira | ✖</p>
+              <p class="textoCurso">Fundamentos de Programação | 6 ECTS | 2021-2022 | ★★★★★ | Prof.Pedro Alves | ✔</p>
+              <p class="textoCurso">Matemática Discreta | 6 ECTS | 2021-2022 | ★★★ | Prof.Teresa Almada | ✔</p>
+              <p class="textoCurso">Matemática I | 6 ECTS | 2021-2022 | ★★★★★ | Prof.André Fonseca | ✔</p>
+              <p class="textoCurso">Sistemas Digitais | 6 ECTS | 2021-2022 | ★★★★ | Prof.João Carvalho | ✔</p>
+              <span class="corSpan">Segundo Semestre</span>
+              <p class="textoCurso">Álgebra Linear | 5 ECTS | 2021-2022 | ★★★ | Prof.Teresa Almada | ✔</p>
+              <p class="textoCurso">Algoritmia e Estrutura de Dados | 6 ECTS | 2021-2022 | ★★★ | Prof.Pedro Alves | ✖
               </p>
-              <p class="tablinks" onclick="openTab('education')">Education</p>
-              <p class="tablinks" onclick="openTab('skills')">Skills</p>
-              <p class="tablinks" onclick="openTab('hobbies')">Hobbies</p>
-            </div>
-            <div class="tabcontents activeTab" id="course">
-              <ul>
-                <li><span>Titulo...</span><br />TEXTO CURSO</li>
-                <li><span>Titulo...</span><br />TEXTO CURSO</li>
-                <li><span>Titulo...</span><br />TEXTO CURSO</li>
-              </ul>
-            </div>
-            <div class="tabcontents" id="education">
-              <ul>
-                <li><span>Titulo...</span><br />TEXTO EDUCATION</li>
-                <li><span>Titulo...</span><br />TEXTO EDUCATION</li>
-                <li><span>Titulo...</span><br />TEXTO EDUCATION</li>
-              </ul>
-            </div>
-            <div class="tabcontents" id="skills">
-              <ul>
-                <li><span>Titulo...</span><br />TEXTO SKILLS</li>
-                <li><span>Titulo...</span><br />TEXTO SKILLS</li>
-                <li><span>Titulo...</span><br />TEXTO SKILLS</li>
-              </ul>
-            </div>
-            <div class="tabcontents" id="hobbies">
-              <ul>
-                <li><span>UI?UX</span><br />TEXTO HOBBIES</li>
-                <li><span>UI?UX</span><br />TEXTO HOBBIES</li>
-                <li><span>UI?UX</span><br />TEXTO HOBBIES</li>
-              </ul>
-            </div>
-          </div>
+              <p class="textoCurso">Arquitetura de Computadores | 5 ECTS | 2021-2022 | ★★★★ | Prof.João Carvalho | ✔</p>
+              <p class="textoCurso">Competências Comportamentais | 4 ECTS | 2021-2022 | ★★★★★ | Prof.Diogo Morais | ✔
+              </p>
+              <p class="textoCurso">Linguagens de Programação I | 5 ECTS | 2021-2022 | ★★★★ | Prof.Pedro Serra | ✔</p>
+              <p class="textoCurso">Matemática II | 5 ECTS | 2021-2022 | ★★★★★ | Prof.André Fonseca | ✔</p>
+            </li>
+            <li><span>Segundo Ano</span><br />
+              <span class="corSpan">Primeiro Semestre</span>
+              <p class="textoCurso">Arquitetura Avançada de Computadores | 6 ECTS | 2022-2023 | ★★★ | Prof.Pedro Serra |
+                ✔</p>
+              <p class="textoCurso">Base de Dados | 6 ECTS | 2022-2023 | ★★★★ | Prof.Rui Ribeiro | ✔</p>
+              <p class="textoCurso">Linguagem de Programação II | 6 ECTS | 2022-2023 | ★★★★ | Prof.Pedro Alves | ✔</p>
+              <p class="textoCurso">Sinais e Sistemas | 6 ECTS | 2022-2023 | ★★★ | Prof.João Canto | ✔</p>
+              <p class="textoCurso">Sistemas Operativos | 6 ECTS | 2022-2023 | ★★★ | Prof.André Fonseca | ✔</p>
+              <span class="corSpan">Segundo Semestre</span>
+              <p class="textoCurso">Engenharia de Requisitos e Testes | 6 ECTS | 2022-2023 | ★★★ | Prof.Rui Ribeiro | ✔
+              </p>
+              <p class="textoCurso">Computação gráfica | 6 ECTS | 2022-2023 | ★★★ | Prof.João Carvalho | ✔</p>
+              <p class="textoCurso">Programação Web | 6 ECTS | 2022-2023 | ★★★★ | Prof.Lúcio Ferreira | ✔</p>
+              <p class="textoCurso">Redes de Computadores | 6 ECTS | 2022-2023 | ★★★★★ | Prof.André Fonseca | ✔</p>
+              <p class="textoCurso">Sistemas de Suporte à Decisão | 6 ECTS | 2022-2023 | ★★★★ | Prof.Rui Ribeiro | ✔</p>
+            </li>
+
+            <li><span>Terceiro Ano</span><br />
+              <span class="corSpan">Anual</span>
+              <p class="textoCurso">Trabalho Final de Curso| 20 ECTS | 2023-2024 | N/A | N/A | N/A</p>
+              <span class="corSpan">Primeiro Semestre</span>
+              <p class="textoCurso">Computação Distribuida | 5 ECTS | 2023-2024| N/A | N/A | N/A</p>
+              <p class="textoCurso">Data Science | 5 ECTS | 2023-2024 | N/A | N/A | N/A</p>
+              <p class="textoCurso">Engenharia de Software | 5 ECTS | 2023-2024 | N/A | N/A | N/A</p>
+              <p class="textoCurso">Interação Humano-Máquina | 5 ECTS | 2023-2024 | N/A | N/A | N/A</p>
+              <span class="corSpan">Segundo Semestre</span>
+              <p class="textoCurso">Computação Móvel | 5 ECTS | 2023-2024 | N/A | N/A | N/A</p>
+              <p class="textoCurso">Inteligência Artificial | 5 ECTS | 2023-2024 | N/A | N/A | N/A</p>
+              <p class="textoCurso">Segurança Informática | 5 ECTS | 2023-2024 | N/A | N/A | N/A</p>
+              <p class="textoCurso">Sistema de Informação na Nuvem | 5 ECTS | 2023-2024 | N/A | N/A | N/A</p>
+            </li>
+          </ul>
+        </div>
+        <div class="tabcontents" id="education">
+          <ul>
+            <li><span>Titulo...</span><br />TEXTO EDUCATION</li>
+            <li><span>Titulo...</span><br />TEXTO EDUCATION</li>
+            <li><span>Titulo...</span><br />TEXTO EDUCATION</li>
+          </ul>
+        </div>
+        <div class="tabcontents" id="skills">
+          <ul>
+            <li><span>Titulo...</span><br />TEXTO SKILLS</li>
+            <li><span>Titulo...</span><br />TEXTO SKILLS</li>
+            <li><span>Titulo...</span><br />TEXTO SKILLS</li>
+          </ul>
+        </div>
+        <div class="tabcontents" id="hobbies">
+          <ul>
+            <li><span>UI?UX</span><br />TEXTO HOBBIES</li>
+            <li><span>UI?UX</span><br />TEXTO HOBBIES</li>
+            <li><span>UI?UX</span><br />TEXTO HOBBIES</li>
+          </ul>
         </div>
       </div>
     </div>
+  </div>
+</div>
 
 
 {% endblock main %}

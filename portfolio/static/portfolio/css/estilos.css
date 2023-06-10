@@ -17,6 +17,7 @@
     --pal8-color: #262626;
     --wht-color: white;
     --wht-color02: #fafafa;
+    --cinzento: #696969;
 }
 
 body {
@@ -474,8 +475,12 @@ body.dark .search-field input {
 /*ESTILO SECÇÃO ABOUTME*/
 
 .about {
-    padding: 180px 80px;
+    padding: 140px 80px;
     color: var(--wht-color);
+}
+
+.textoCurso{
+    font-size: 14px;
 }
 
 .row {
@@ -539,7 +544,13 @@ body.dark .search-field input {
 
 .tabcontents ul li span {
     color: var(--pal6-color);
-    font-size: 14px;
+    font-size: 20px;
+}
+
+.tabcontents ul li .corSpan {
+    font-style: italic;
+    color: var(--cinzento);
+    font-size: 17px;
 }
 
 .tabcontents {
@@ -1327,3 +1338,5 @@ footer .copyright {
         font-size: 8px;
     }
 }
+
+/*----------------------------------------------------------------------------*/
