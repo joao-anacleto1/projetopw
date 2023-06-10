@@ -21,7 +21,7 @@ app_name = "portfolio"
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('home/', views.home_page_view, name='home'),
+    path('', views.home_page_view, name='home'),
     path('aboutme/', views.about_me_view, name='aboutme'),
     path('projects/', views.projects_view, name='projects'),
     path('wp/', views.wp_view, name='wp'),

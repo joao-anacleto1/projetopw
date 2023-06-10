@@ -17,7 +17,7 @@
     --pal8-color: #262626;
     --wht-color: white;
     --wht-color02: #fafafa;
-    --cinzento: #696969;
+    --cinzento: #525252;
 }
 
 body {
@@ -543,7 +543,7 @@ body.dark .search-field input {
 }
 
 .tabcontents ul li span {
-    color: var(--pal6-color);
+    color: var(--pal2-color);
     font-size: 20px;
 }
 
