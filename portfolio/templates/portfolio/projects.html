@@ -1,175 +1,170 @@
-{% extends "portfolio/layout.html" %}
-{% load static %}
-{% block title %}Projects{% endblock %}
-{% block main %}
-<section class="projects">
-  <div class="titleM">
-    <h1>My Project's</h1>
-    <div class="lineM"></div>
-  </div>
+{% extends "portfolio/layout.html" %} 
+{% load static %} 
+{% block title%}Projects{% endblock %} 
+{%block main%}
+<!DOCTYPE html>
+    <section class="projects">
+      <div class="titleM">
+        <h1>My Project's</h1>
+        <div class="lineM"></div>
+      </div>
 
-  <div class="rowM">
-    <div class="colM">
-      <img src="{% static 'portfolio/images/fp_project.png' %}" alt="" />
-      <h4>DEISI Minesweeper FP</h4>
-      <p>
-        The Fundamentals of Programming project is an adaptation of the famous Minesweeper game.
-      </p>
-      <p>The player finds
-        themselves in a minefield but cannot see the mines.</p>
-      <p>They must navigate from the top left corner to the bottom
-        right corner without stepping on any mines.</p>
-      <p>The completion of this project was done in a team of two members.</p>
+      <div class="rowM">
+        <div class="colM">
+          <img src="{% static 'portfolio/images/fp_project.png' %}" alt="" />
+          <h4>DEISI Minesweeper</h4>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry.
+          </p>
+        </div>
+        <div class="colM">
+          <img src="{% static 'portfolio/images/lp1-project.png' %}" alt="" />
+          <h4>Não Te Constipes LP1</h4>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry.
+          </p>
+        </div>
 
+        <div class="colM">
+          <img src="{% static 'portfolio/images/aed-project.png' %}" alt="" />
+          <h4>DEISIFLIX AED</h4>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry.
+          </p>
+        </div>
+      </div>
+    </section>
 
-    </div>
-    <div class="colM">
-      <img src="{% static 'portfolio/images/lp1-project.png' %}" alt="" />
-      <h4>Não Te Constipes LP1</h4>
-      <p>
-        Lorem Ipsum is simply dummy text of the printing and typesetting
-        industry.
-      </p>
-    </div>
+    <section class="projects">
+      <div class="rowM">
+        <div class="colM">
+          <img src="{% static 'portfolio/images/aac_project.png' %}" alt="" />
+          <h4>Arduino AAC</h4>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry.
+          </p>
+        </div>
+        <div class="colM">
+          <img src="{% static 'portfolio/images/lp2-project.png' %}" alt="" />
+          <h4>DEISIJUNGLE LP2</h4>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry.
+          </p>
+        </div>
 
-    <div class="colM">
-      <img src="{% static 'portfolio/images/aed-project.png' %}" alt="" />
-      <h4>DEISIFLIX AED</h4>
-      <p>
-        Lorem Ipsum is simply dummy text of the printing and typesetting
-        industry.
-      </p>
-    </div>
-  </div>
-</section>
+        <div class="colM">
+          <img src="{% static 'portfolio/images/bd-project.png' %}" alt="" />
+          <h4>Base de Dados DEISIFLIX BD</h4>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry.
+          </p>
+        </div>
+      </div>
+    </section>
 
-<section class="projects">
-  <div class="rowM">
-    <div class="colM">
-      <img src="{% static 'portfolio/images/aac_project.png' %}" alt="" />
-      <h4>Arduino AAC</h4>
-      <p>
-        Lorem Ipsum is simply dummy text of the printing and typesetting
-        industry.
-      </p>
-    </div>
-    <div class="colM">
-      <img src="{% static 'portfolio/images/lp2-project.png' %}" alt="" />
-      <h4>DEISIJUNGLE LP2</h4>
-      <p>
-        Lorem Ipsum is simply dummy text of the printing and typesetting
-        industry.
-      </p>
-    </div>
+    <section class="projects">
+      <div class="titleM">
+        <h1>TFC</h1>
+        <div class="lineM"></div>
+      </div>
 
-    <div class="colM">
-      <img src="{% static 'portfolio/images/bd-project.png' %}" alt="" />
-      <h4>Base de Dados DEISIFLIX BD</h4>
-      <p>
-        Lorem Ipsum is simply dummy text of the printing and typesetting
-        industry.
-      </p>
-    </div>
-  </div>
-</section>
+      <div class="rowM">
+        <div class="colM">
+          <img src="{% static 'portfolio/images/placeholder.png' %}" alt="" />
+          <h4>Trabalho Final Curso 1</h4>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry.
+          </p>
+        </div>
+        <div class="colM">
+          <img src="{% static 'portfolio/images/placeholder.png' %}" alt="" />
+          <h4>Trabalho Final Curso 2</h4>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry.
+          </p>
+        </div>
 
-<section class="projects">
-  <div class="titleM">
-    <h1>TFC</h1>
-    <div class="lineM"></div>
-  </div>
+        <div class="colM">
+          <img src="{% static 'portfolio/images/placeholder.png' %}" alt="" />
+          <h4>Trabalho Final Curso 3</h4>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry.
+          </p>
+        </div>
+      </div>
+    </section>
 
-  <div class="rowM">
-    <div class="colM">
-      <img src="{% static 'portfolio/images/placeholder.png' %}" alt="" />
-      <h4>Trabalho Final Curso 1</h4>
-      <p>
-        Lorem Ipsum is simply dummy text of the printing and typesetting
-        industry.
-      </p>
-    </div>
-    <div class="colM">
-      <img src="{% static 'portfolio/images/placeholder.png' %}" alt="" />
-      <h4>Trabalho Final Curso 2</h4>
-      <p>
-        Lorem Ipsum is simply dummy text of the printing and typesetting
-        industry.
-      </p>
-    </div>
+    <section class="projects">
+      <div class="rowM">
+        <div class="colM">
+          <img src="{% static 'portfolio/images/placeholder.png' %}" alt="" />
+          <h4>Trabalho Final Curso 4</h4>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry.
+          </p>
+        </div>
+        <div class="colM">
+          <img src="{% static 'portfolio/images/placeholder.png' %}" alt="" />
+          <h4>Trabalho Final Curso 5</h4>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry.
+          </p>
+        </div>
 
-    <div class="colM">
-      <img src="{% static 'portfolio/images/placeholder.png' %}" alt="" />
-      <h4>Trabalho Final Curso 3</h4>
-      <p>
-        Lorem Ipsum is simply dummy text of the printing and typesetting
-        industry.
-      </p>
-    </div>
-  </div>
-</section>
+        <div class="colM">
+          <img src="{% static 'portfolio/images/placeholder.png' %}" alt="" />
+          <h4>Trabalho Final Curso 6</h4>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry.
+          </p>
+        </div>
+      </div>
+    </section>
 
-<section class="projects">
-  <div class="rowM">
-    <div class="colM">
-      <img src="{% static 'portfolio/images/placeholder.png' %}" alt="" />
-      <h4>Trabalho Final Curso 4</h4>
-      <p>
-        Lorem Ipsum is simply dummy text of the printing and typesetting
-        industry.
-      </p>
-    </div>
-    <div class="colM">
-      <img src="{% static 'portfolio/images/placeholder.png' %}" alt="" />
-      <h4>Trabalho Final Curso 5</h4>
-      <p>
-        Lorem Ipsum is simply dummy text of the printing and typesetting
-        industry.
-      </p>
-    </div>
+    <section class="projects">
+      <div class="titleM">
+        <h1>Lista 3 Projetos</h1>
+        <div class="lineM"></div>
+      </div>
 
-    <div class="colM">
-      <img src="{% static 'portfolio/images/placeholder.png' %}" alt="" />
-      <h4>Trabalho Final Curso 6</h4>
-      <p>
-        Lorem Ipsum is simply dummy text of the printing and typesetting
-        industry.
-      </p>
-    </div>
-  </div>
-</section>
+      <div class="rowM">
+        <div class="colM">
+          <img src="{% static 'portfolio/images/placeholder.png' %}" alt="" />
+          <h4>Projeto 1</h4>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry.
+          </p>
+        </div>
+        <div class="colM">
+          <img src="{% static 'portfolio/images/placeholder.png' %}" alt="" />
+          <h4>Projeto 2</h4>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry.
+          </p>
+        </div>
 
-<section class="projects">
-  <div class="titleM">
-    <h1>Lista 3 Projetos</h1>
-    <div class="lineM"></div>
-  </div>
-
-  <div class="rowM">
-    <div class="colM">
-      <img src="{% static 'portfolio/images/placeholder.png' %}" alt="" />
-      <h4>Projeto 1</h4>
-      <p>
-        Lorem Ipsum is simply dummy text of the printing and typesetting
-        industry.
-      </p>
-    </div>
-    <div class="colM">
-      <img src="{% static 'portfolio/images/placeholder.png' %}" alt="" />
-      <h4>Projeto 2</h4>
-      <p>
-        Lorem Ipsum is simply dummy text of the printing and typesetting
-        industry.
-      </p>
-    </div>
-
-    <div class="colM">
-      <img src="{% static 'portfolio/images/placeholder.png' %}" alt="" />
-      <h4>Projeto 3</h4>
-      <p>
-        Lorem Ipsum is simply dummy text of the printing and typesetting
-        industry.
-      </p>
-    </div>
-  </div>
-</section>
+        <div class="colM">
+          <img src="{% static 'portfolio/images/placeholder.png' %}" alt="" />
+          <h4>Projeto 3</h4>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry.
+          </p>
+        </div>
+      </div>
+    </section>
 {% endblock main %}

@@ -502,6 +502,11 @@ body.dark .search-field input {
     flex-basis: 60%;
 }
 
+.aboutcol2 a .corHref{
+    text-decoration: none;
+}
+
+
 .subtitle {
     font-size: 60px;
     font-weight: 600;
@@ -1103,50 +1108,68 @@ textarea.input {
 
 /*------------------------------------------------------------------------------*/
 
-/*STYLE PROJECT'S PAGE*/
+/* STYLE PROJECT'S PAGE */
 
 section .projects {
     width: 80%;
     margin: 80px auto;
-}
-
-.titleM {
+  }
+  
+  .titleM {
     text-align: center;
     font-size: 4vmin;
     color: var(--pal2-color);
     padding: 50px;
     margin-top: 100px;
     margin-bottom: -50px;
-}
-
-.rowM {
+  }
+  
+  .rowM {
     display: flex;
-    align-items: center;
-    width: 100%;
+    align-items: flex-start;
     justify-content: space-between;
     margin-bottom: 50px;
-}
-
-.rowM .colM {
+  }
+  
+  .rowM .colM {
     display: flex;
     flex-direction: column;
-    align-items: center;
-}
-
-.projects .rowM {
+    align-items: center; /* Centraliza horizontalmente o conteúdo */
+    text-align: center; /* Centraliza o texto */
+  }
+  
+  .rowM .colM img {
+    max-height: 100%;
+    width: auto;
+    margin-left: auto; /* Centraliza a imagem horizontalmente */
+    margin-right: auto; /* Centraliza a imagem horizontalmente */
+  }
+  
+  .rowM .colM p {
+    padding: 0px 40px;
+    text-align: justify;
+    overflow: auto;
+    margin-top: 20px; /* Adiciona um espaço entre a imagem e o texto */
+  }
+  
+  .projects .rowM {
     margin-top: 50px;
-}
-
-h4 {
+  }
+  
+  h4 {
     font-size: 3vmin;
     color: #5e5c5c;
     margin: 20px auto;
-}
-
-.projects p {
+  }
+  
+  .projects p {
     padding: 0px 40px;
-}
-
+    text-align: left; /* Alinha o texto à esquerda */
+  }
+  
+  
+  
+  
 /*MEDIA QUERY STYLE PROJECT'S PAGE*/
 
 @media only screen and (max-width: 850px) {
