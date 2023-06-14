@@ -2,90 +2,143 @@
 
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>{% block title %}{% endblock %}</title>
+        <meta name="author" content="João Anacleto" />
+        <meta name="description" content="Lab 4 - Web design responsivo" />
+        <link
+            rel="icon"
+            href="{% static 'portfolio/images/ja-logo.png' %}"
+            type="image/x-icon"
+        />
+        <meta name="keywords" content="palavras chave" />
+        <link
+            rel="stylesheet"
+            href="{% static 'portfolio\css\estilos.css' %}"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+            integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
 
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>{% block title %}{% endblock %}</title>
-  <meta name="author" content="João Anacleto" />
-  <meta name="description" content="Lab 4 - Web design responsivo" />
-  <link rel="icon" href="{% static 'portfolio/images/ja-logo.png' %}" type="image/x-icon">
-  <meta name="keywords" content="palavras chave" />
-  <link rel="stylesheet" href="{% static 'portfolio\css\estilos.css' %}">
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-    rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
+    </head>
 
-<body>
-<nav>
-    <div class="nav-bar">
-      <i class="fa-solid fa-bars siderbarOpen" style="color: #ffffff"></i>
-      <span class="logo navLogo"><a href="{% url 'portfolio:home' %}"><img src="{% static 'portfolio/images/ja-logo.png' %}" class="logoSize" /></a></span>
+    <body>
+        <nav>
+            <div class="nav-bar">
+                <i
+                    class="fa-solid fa-bars siderbarOpen"
+                    style="color: #ffffff"
+                ></i>
+                <span class="logo navLogo"
+                    ><a href="{% url 'portfolio:home' %}"
+                        ><img
+                            src="{% static 'portfolio/images/ja-logo.png' %}"
+                            class="logoSize" /></a
+                ></span>
 
-      <div class="menu">
-        <div class="logo-toggle">
-          <span class="logo"><a href="{% url 'portfolio:home' %}"><img src="{% static 'portfolio/images/logo.png' %}" class="logoSize" /></a></span>
-          <i class="fa-solid fa-xmark siderbarClose" style="color: #ffffff"></i>
-        </div>
+                <div class="menu">
+                    <div class="logo-toggle">
+                        <span class="logo"
+                            ><a href="{% url 'portfolio:home' %}"
+                                ><img
+                                    src="{% static 'portfolio/images/logo.png' %}"
+                                    class="logoSize" /></a
+                        ></span>
+                        <i
+                            class="fa-solid fa-xmark siderbarClose"
+                            style="color: #ffffff"
+                        ></i>
+                    </div>
 
-        <ul class="nav-links">
-          <li><a href="{% url 'portfolio:home' %}" >Home</a></li>
-          <li><a href="{% url 'portfolio:aboutme' %}">About me</a></li>
-          <li><a href="{% url 'portfolio:projects' %}">Projects</a></li>
-          <li><a href="{% url 'portfolio:wp' %}">Web Programming</a></li>
-          <li><a href="{% url 'portfolio:blog' %}">Blog</a></li>
-          <li><a href="{% url 'portfolio:atw' %}">About this Website</a></li>
-          <li><a href="{% url 'portfolio:more' %}">More</a></li>
-          <li><a href="{% url 'portfolio:contact' %}">Contact</a></li>
+                    <ul class="nav-links">
+                        <li><a href="{% url 'portfolio:home' %}">Home</a></li>
+                        <li>
+                            <a href="{% url 'portfolio:aboutme' %}">About me</a>
+                        </li>
+                        <li>
+                            <a href="{% url 'portfolio:projects' %}"
+                                >Projects</a
+                            >
+                        </li>
+                        <li>
+                            <a href="{% url 'portfolio:wp' %}"
+                                >Web Programming</a
+                            >
+                        </li>
+                        <li><a href="{% url 'portfolio:blog' %}">Blog</a></li>
+                        <li>
+                            <a href="{% url 'portfolio:atw' %}"
+                                >About this Website</a
+                            >
+                        </li>
+                        <li><a href="{% url 'portfolio:more' %}">More</a></li>
+                        <li>
+                            <a href="{% url 'portfolio:contact' %}">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="darkLight-searchBox">
+                    <div class="dark-light">
+                        <i
+                            class="fa-solid fa-moon moon"
+                            style="color: #1f3256"
+                        ></i>
+                        <i
+                            class="fa-solid fa-sun sun"
+                            style="color: #ffee00"
+                        ></i>
+                    </div>
+                    <div class="searchBox">
+                        <div class="searchToggle">
+                            <i
+                                class="fa-solid fa-xmark cancel"
+                                style="color: #ffffff"
+                            ></i>
+                            <i
+                                class="fa-solid fa-magnifying-glass search"
+                                style="color: #ffffff"
+                            ></i>
+                        </div>
+                        <div class="search-field">
+                            <input type="text" placeholder="Search..." />
+                            <i class="fa-solid fa-magnifying-glass search"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </body>
+
+    <main>{% block main %} {% endblock main %}</main>
+
+    <footer>
+        <ul class="list">
+            <li>
+                <a href="{% url 'portfolio:home' %}">Home</a>
+            </li>
+            <li>
+                <a href="{% url 'portfolio:contact' %}">Contact</a>
+            </li>
+            <li>
+                <a href="https://www.ulusofona.pt/">University</a>
+            </li>
         </ul>
-      </div>
-      <div class="darkLight-searchBox">
-        <div class="dark-light">
-          <i class="fa-solid fa-moon moon" style="color: #1f3256"></i>
-          <i class="fa-solid fa-sun sun" style="color: #ffee00"></i>
-        </div>
-        <div class="searchBox">
-          <div class="searchToggle">
-            <i class="fa-solid fa-xmark cancel" style="color: #ffffff"></i>
-            <i class="fa-solid fa-magnifying-glass search" style="color: #ffffff"></i>
-          </div>
-          <div class="search-field">
-            <input type="text" placeholder="Search..." />
-            <i class="fa-solid fa-magnifying-glass search"></i>
-          </div>
-        </div>
-      </div>
-    </div>
-  </nav>
-</body>
-
-  <main>
-	{% block main %}
-	{% endblock main %}
-  </main>
-
-  <footer>
-    <ul class="list">
-      <li>
-        <a href="{% url 'portfolio:home' %}">Home</a>
-      </li>
-      <li>
-        <a href="{% url 'portfolio:contact' %}">Contact</a>
-      </li>
-      <li>
-        <a href="https://www.ulusofona.pt/">University</a>
-      </li>
-    </ul>
-    <p class="copyright">
-      Universidade Lusófona | Engenharia Informática | João Anacleto @2023
-    </p>
-  </footer>
+        <p class="copyright">
+            Universidade Lusófona | Engenharia Informática | João Anacleto @2023
+        </p>
+    </footer>
     <script src="{% static 'portfolio/js/dl-script.js' %}"></script>
     <script src="{% static 'portfolio/js/tab-script.js' %}"></script>
     <script src="{% static 'portfolio/js/onmouse.js' %}"></script>
@@ -94,5 +147,4 @@
     <script src="{% static 'portfolio/js/calculator.js' %}"></script>
     <script src="{% static 'portfolio/js/data.js' %}"></script>
     <script src="{% static 'portfolio/js/apli.js' %}"></script>
-
 </html>

@@ -467,7 +467,6 @@ body.dark .search-field input {
         align-items: center;
         justify-content: center;
     }
-
 }
 
 /*------------------------------------------------------------------------------*/
@@ -479,7 +478,7 @@ body.dark .search-field input {
     color: var(--wht-color);
 }
 
-.textoCurso{
+.textoCurso {
     font-size: 14px;
 }
 
@@ -502,10 +501,9 @@ body.dark .search-field input {
     flex-basis: 60%;
 }
 
-.aboutcol2 a .corHref{
+.aboutcol2 a .corHref {
     text-decoration: none;
 }
-
 
 .subtitle {
     font-size: 60px;
@@ -705,7 +703,6 @@ body.dark .search-field input {
 .imagemIns {
     text-align: center;
 }
-
 
 /*------------------------------------------------------------------------------*/
 
@@ -1009,101 +1006,113 @@ textarea.input {
 
 /*STYLE BLOG PAGE*/
 
-.ping1{
-    width: 100%;
-    height: 100%;
-}
-
-.imageBlogFirst{
-    padding: 120px 0px 20px;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.pimg2 {
-    background-image: url(../images/color-hunt-og.png);
-    min-height: 400px;
-}
-
-.pimg3 {
-    background-image: url(../images/chatGpt-img.jpg);
-    min-height: 400px;
-}
-
-.pimg4 {
-    position: relative;
-    width: 100%;
-    height: 0;
-    padding-bottom: 50%; /* this creates a 16:9 aspect ratio for the iframe */
-}
-
-.pimg4 iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border: none;
-}
-
-.pimg1,
-.pimg2,
-.pimg3 .pimg4 {
-    position: relative;
-    opacity: 0.7;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
-
-.title-section {
+.headerBlog {
     text-align: center;
-    padding: 15px;
 }
 
-.section {
+.h1TituloBlog {
+    font-size: 80px;
+    color: gray;
+}
+
+.pBlog {
+    font-style: italic;
+    color: gray;
+}
+
+.post {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
     text-align: center;
-    padding: 40px 80px;
-    line-height: 25px;
 }
 
-.section-light {
-    background-color: var(--pal2-color);
-    color: #e1ffee;
+.post-author {
+    font-weight: bold;
+    color: #333;
 }
 
-.section-dark {
-    background-color: var(--pal2-color);
-    color: #e1ffee;
+.post-date {
+    color: #777;
 }
 
-.ptext {
-    position: absolute;
-    top: 50%;
-    width: 100%;
-    text-align: center;
-    color: var(--pal8-color);
-    font-size: 50px;
-    letter-spacing: 8px;
-    text-transform: uppercase;
+.post-title {
+    font-size: 20px;
+    color: #333;
 }
 
-.ligacao {
+.post-description {
+    margin-top: 10px;
+    color: #555;
+}
+
+.post-link {
+    color: #395b64;
     text-decoration: none;
-    color: black;
-    text-decoration-style: solid;
 }
 
-@media (max-width: 850px) {
-    .section {
-        padding: 40px;
-        line-height: 20px;
-    }
-    .pBlog {
-        font-size: 16px;
-    }
+.post-image {
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px;
+}
+
+.forms {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    background-color: var(--pal2-color);
+    padding-top: 100px;
+}
+
+.forms h2 {
+    font-size: 24px;
+    color: var(--wht-color02); /* Altera a cor dos títulos para azul */
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
+
+.forms form {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    max-width: 400px;
+    width: 100%;
+}
+
+.forms input[type="text"],
+.forms textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    color: #000;
+}
+
+.forms input[type="submit"] {
+    background-color: var(
+        --pal2-color
+    ); /* Altera a cor de fundo do botão para azul */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+.forms input[type="submit"]:hover {
+    background-color: var(
+        --pal2-color
+    ); /* Altera a cor de fundo do botão no hover */
+}
+
+label {
+    color: var(--pal2-color);
 }
 
 /*------------------------------------------------------------------------------*/
@@ -1113,63 +1122,60 @@ textarea.input {
 section .projects {
     width: 80%;
     margin: 80px auto;
-  }
-  
-  .titleM {
+}
+
+.titleM {
     text-align: center;
     font-size: 4vmin;
     color: var(--pal2-color);
     padding: 50px;
     margin-top: 100px;
     margin-bottom: -50px;
-  }
-  
-  .rowM {
+}
+
+.rowM {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
     margin-bottom: 50px;
-  }
-  
-  .rowM .colM {
+}
+
+.rowM .colM {
     display: flex;
     flex-direction: column;
     align-items: center; /* Centraliza horizontalmente o conteúdo */
     text-align: center; /* Centraliza o texto */
-  }
-  
-  .rowM .colM img {
+}
+
+.rowM .colM img {
     max-height: 100%;
     width: auto;
     margin-left: auto; /* Centraliza a imagem horizontalmente */
     margin-right: auto; /* Centraliza a imagem horizontalmente */
-  }
-  
-  .rowM .colM p {
+}
+
+.rowM .colM p {
     padding: 0px 40px;
     text-align: justify;
     overflow: auto;
     margin-top: 20px; /* Adiciona um espaço entre a imagem e o texto */
-  }
-  
-  .projects .rowM {
+}
+
+.projects .rowM {
     margin-top: 50px;
-  }
-  
-  h4 {
+}
+
+h4 {
     font-size: 3vmin;
     color: #5e5c5c;
     margin: 20px auto;
-  }
-  
-  .projects p {
+}
+
+.projects p {
     padding: 0px 40px;
     text-align: left; /* Alinha o texto à esquerda */
-  }
-  
-  
-  
-  
+}
+
 /*MEDIA QUERY STYLE PROJECT'S PAGE*/
 
 @media only screen and (max-width: 850px) {
