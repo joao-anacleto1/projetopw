@@ -10,6 +10,7 @@
         Aplicação de um blog que pode ser visualizado e em que lhe podem ser
         adicionados POSTS!
     </p>
+    <br>
   </div>
   
 
@@ -28,6 +29,113 @@
 
 
 <br>
+
+<div class="division">
+    <span class="button_sports">Sports</span> 
+    <hr>
+</div>
+
+{% for post in posts %}
+    <div class="post-container">
+        <div class="post">
+            <div class="post-content">
+                <div class="post-author">{{ post.autor }}</div>
+                <div class="post-date">{{ post.data }}</div>
+                <div class="post-title">{{ post.titulo }}</div>
+                <div class="post-description">{{ post.descricao }}</div>
+                {% if post.link %}
+                <div class="post-link">
+                    <a href="{{ post.link }}">{{ post.link }}</a>
+                </div>
+            {% endif %}
+                <br>
+            </div>
+            <a href="{% url 'portfolio:delete' post.id %}" class="btn-delete">Delete</a>
+
+            <div class="like">
+                <a href="{% url 'portfolio:like' post.id %}" class="curti">👍🏻</a>
+                <span class="corSpanBlog">{{post.like}}</span>
+
+                <a href="{% url 'portfolio:deslike' post.id %}" class="curti">👎🏻</a>
+                <span class="corSpanBlog">{{post.deslike}}</span>
+            </div>
+            
+        </div>
+{% endfor %}
+
+
+<div class="division">
+    <span class="button_sports">Sports</span> 
+    <hr>
+</div>
+
+{% for post in posts %}
+    <div class="post-container">
+        <div class="post">
+            <div class="post-content">
+                <div class="post-author">{{ post.autor }}</div>
+                <div class="post-date">{{ post.data }}</div>
+                <div class="post-title">{{ post.titulo }}</div>
+                <div class="post-description">{{ post.descricao }}</div>
+                {% if post.link %}
+                <div class="post-link">
+                    <a href="{{ post.link }}">{{ post.link }}</a>
+                </div>
+            {% endif %}
+                <br>
+            </div>
+            <a href="{% url 'portfolio:delete' post.id %}" class="btn-delete">Delete</a>
+
+            <div class="like">
+                <a href="{% url 'portfolio:like' post.id %}" class="curti">👍🏻</a>
+                <span class="corSpanBlog">{{post.like}}</span>
+
+                <a href="{% url 'portfolio:deslike' post.id %}" class="curti">👎🏻</a>
+                <span class="corSpanBlog">{{post.deslike}}</span>
+            </div>
+            
+        </div>
+{% endfor %}
+
+
+<div class="division">
+    <span class="button_sports">Sports</span> 
+    <hr>
+</div>
+
+{% for post in posts %}
+    <div class="post-container">
+        <div class="post">
+            <div class="post-content">
+                <div class="post-author">{{ post.autor }}</div>
+                <div class="post-date">{{ post.data }}</div>
+                <div class="post-title">{{ post.titulo }}</div>
+                <div class="post-description">{{ post.descricao }}</div>
+                {% if post.link %}
+                <div class="post-link">
+                    <a href="{{ post.link }}">{{ post.link }}</a>
+                </div>
+            {% endif %}
+                <br>
+            </div>
+            <a href="{% url 'portfolio:delete' post.id %}" class="btn-delete">Delete</a>
+
+            <div class="like">
+                <a href="{% url 'portfolio:like' post.id %}" class="curti">👍🏻</a>
+                <span class="corSpanBlog">{{post.like}}</span>
+
+                <a href="{% url 'portfolio:deslike' post.id %}" class="curti">👎🏻</a>
+                <span class="corSpanBlog">{{post.deslike}}</span>
+            </div>
+            
+        </div>
+{% endfor %}
+
+
+<div class="division">
+    <span class="button_sports">Sports</span> 
+    <hr>
+</div>
 
 {% for post in posts %}
     <div class="post-container">
