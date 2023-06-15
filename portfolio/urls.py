@@ -32,4 +32,8 @@ urlpatterns = [
     path('atw/', views.atw_view, name='atw'),
     path('more/', views.more_view, name='more'),
     path('contact/', views.contact_view, name='contact'),
+    path('login/', views.loginU, name="login"),
+    path('logout/', views.logoutU, name="logout"),
+    path('registo/', views.registo, name="registo"),
+    path('register/', views.registerU, name="register"),
 ]

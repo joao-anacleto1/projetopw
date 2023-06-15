@@ -1,0 +1,36 @@
+{% extends  "portfolio/layout.html" %}
+{% load static %}
+{% block title %}Login{% endblock %}
+{% block main %}
+
+<div class="caixaBody">
+
+<div class="login">
+
+    <h1>LOGIN</h1>
+
+    <form action="{% url 'portfolio:login' %}" method="POST">
+        {% csrf_token %}
+        <p>
+            <span>Username:</span> <br>
+            <input type="text" name="username" placeholder="username" class="caixaPreenchimento">
+        </p>
+        
+        <p>
+            <span>Password:</span> <br>
+            <input type="password" name="password" placeholder="password" class="caixaPreenchimento">
+        </p>
+        
+        
+            <input type="submit" value="Login" class="signIn">
+          
+    </form>
+
+
+    <div class="signUp">
+        If you don't have an account, please  <a href="{% url 'portfolio:registo'%}">sign-up</a> here!
+    </div>
+</div>
+</div>
+
+{% endblock main %}
