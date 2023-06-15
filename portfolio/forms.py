@@ -11,6 +11,7 @@ class Postform(ModelForm):
 
         labels = {
             'autor': 'Author',
+            'typeOfChoice': 'Type',
             'titulo': 'Title',
             'descricao': 'Post',
             'link' : 'Link',
