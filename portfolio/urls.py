@@ -26,6 +26,7 @@ urlpatterns = [
     path('projects/', views.projects_view, name='projects'),
     path('wp/', views.wp_view, name='wp'),
     path('blog/', views.blog_view, name='blog'),
+    path('blog/delete/<int:id_post>', views.delete_blog_post, name='delete'),
     path('atw/', views.atw_view, name='atw'),
     path('more/', views.more_view, name='more'),
     path('contact/', views.contact_view, name='contact'),

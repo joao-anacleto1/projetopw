@@ -4,6 +4,10 @@ from .models import Post
 
 from .forms import Postform
 
+from django .http import HttpResponseRedirect
+
+from django.urls import reverse
+
 # Create your views here.
 
 from django.shortcuts import render
@@ -28,6 +32,11 @@ def blog_view(request):
 	context = {'posts':sorted(Post.objects.all(), key=lambda post: post.data, reverse=True), 'form': blog_form}
 
 	return render(request, "portfolio/blog.html" ,context)
+
+
+def delete_blog_post(request , id_post):
+	Post.objects.get(id=id_post).delete()
+	return HttpResponseRedirect(reverse(('portfolio:blog')))
 
 
 

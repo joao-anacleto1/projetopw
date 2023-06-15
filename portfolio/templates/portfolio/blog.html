@@ -37,6 +37,8 @@
         <div class="post-description">{{ post.descricao }}</div>
         <div class="post-link"><a href="{{ post.link }}">{{ post.link }}</a></div>
     </div>
+
+    <a href="{% url 'portfolio:delete' post.id %}" class="btn-delete">Delete Post</a>
 {% endfor %}
 
 
