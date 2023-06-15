@@ -7,7 +7,7 @@ class Postform(ModelForm):
     class Meta:
         model = Post
         fields = '__all__'
-        exclude = ['data']
+        exclude = ['data','like','deslike']
 
         labels = {
             'autor': 'Author',

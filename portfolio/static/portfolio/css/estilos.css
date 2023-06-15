@@ -1007,6 +1007,7 @@ textarea.input {
 /*STYLE BLOG PAGE*/
 
 .headerBlog {
+    padding-top: 110px;
     text-align: center;
 }
 
@@ -1062,7 +1063,7 @@ textarea.input {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 70vh;
+    height: 75vh;
     background-color: var(--pal2-color);
     padding-top: 100px;
 }
@@ -1114,6 +1115,26 @@ textarea.input {
 label {
     color: var(--pal2-color);
 }
+
+.btn-delete {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--pal2-color);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+
+  .corSpanBlog {
+    color: var(--pal2-color);
+}
+
+.curti {
+    text-decoration: none;
+}
+
 
 /*------------------------------------------------------------------------------*/
 

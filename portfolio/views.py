@@ -31,14 +31,28 @@ def blog_view(request):
 
 	context = {'posts':sorted(Post.objects.all(), key=lambda post: post.data, reverse=True), 'form': blog_form}
 
-	return render(request, "portfolio/blog.html" ,context)
+	return render(request, "portfolio/blog.html" , context)
 
 
 def delete_blog_post(request , id_post):
 	Post.objects.get(id=id_post).delete()
+
 	return HttpResponseRedirect(reverse(('portfolio:blog')))
 
+def like_post(request, id_post):
+    likesNoPost = Post.objects.get(id=id_post).like
+    likesNoPost += 1
+    Post.objects.filter(id=id_post).update(like=likesNoPost)
+    
+    return HttpResponseRedirect(reverse('portfolio:blog'))
 
+
+def deslike_post(request, idP):
+    deslikesNoPost = Post.objects.get(id=idP).deslike
+    deslikesNoPost += 1
+    Post.objects.filter(id=idP).update(deslike=deslikesNoPost)
+    
+    return HttpResponseRedirect(reverse('portfolio:blog'))
 
 
 def atw_view(request):
